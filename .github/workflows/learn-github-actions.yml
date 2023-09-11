@@ -11,3 +11,11 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+
+  run-step-with-error:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls
+      - run: false
+      - run: git init help
