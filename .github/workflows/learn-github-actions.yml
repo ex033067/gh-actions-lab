@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ls
-      - run: false
+      - run: pwd
+      - run: ls -a
+      - run: true
       - run: git init --help
